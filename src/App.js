@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
 
 function App() {
+  const send = async (e) => {
+    e.preventDefault()
+    console.log(e.target.num1.value)
+    console.log(e.target.num2.value)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form className="form_auth_mobile__flex" onSubmit={send}>
+        <input type="number" name="num1" />
+        <input type="number" name="num2" />
+        <button type="submit">Send</button>
+      </form>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

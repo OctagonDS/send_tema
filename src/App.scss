@@ -1,0 +1,32 @@
+.App {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 30px 30px;
+  gap: 10px;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & input {
+      height: 30px;
+    }
+
+    & button {
+      background: #ffca56;
+      height: 35px;
+      width: 110px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-weight: 600;
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+    }
+  }
+}
